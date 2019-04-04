@@ -41,7 +41,7 @@ const loginmodule = require('skku-login-module')
 ### 4. 함수를 실행하고, callback function을 통해 결과를 확인한다.
 
 ```javascript
-loginmodule.loginconfirm(StudentID, Passwd, (result)=>{
+loginmodule.login_confirm(StudentID, Passwd, (result)=>{
     console.log(result)
 })
 ```
@@ -53,7 +53,7 @@ result에는 로그인이 성공하면 정보 4개가 든 배열이, 실패하�
 ```javascript
 const loginmodule = require('skku-login-module')
 
-loginmodule.loginconfirm('1994213459', 'YourOwnPasswd', (result)=>{
+loginmodule.login_confirm('1994213459', 'YourOwnPasswd', (result)=>{
     console.log(result)
 })
 ```
