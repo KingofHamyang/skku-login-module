@@ -2,5 +2,6 @@
 .idea
 .tscache
 .DS_Store
+.npmignore
 node_modules/
 package-lock.json
