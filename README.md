@@ -49,8 +49,10 @@ loginmodule.loginconfirm(StudentID, Passwd, (result)=>{
 result에는 로그인이 성공하면 정보 4개가 든 배열이, 실패하면 빈 배열이 반환됩니다.
 ### 예시
 
-예시코드
+예시코드 app.js
 ```javascript
+const loginmodule = require('skku-login-module')
+
 loginmodule.loginconfirm('1994213459', 'YourOwnPasswd', (result)=>{
     console.log(result)
 })
