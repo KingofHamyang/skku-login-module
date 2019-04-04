@@ -47,6 +47,19 @@ loginmodule.loginconfirm(StudentID, Passwd, (result)=>{
 ```
 
 result에는 로그인이 성공하면 정보 4개가 든 배열이, 실패하면 빈 배열이 반환됩니다.
+### 예시
+
+실패
+```
+Someone's MacBook-Pro:testnpm Someone$ node app.js
+[]
+```
+
+성공
+```
+Someone's MacBook-Pro:testnpm Someone$ node app.js
+[ '홍길동', '1994213459', '학사', '반도체시스템공학과' ]
+```
 	
 
 ****
