@@ -3,6 +3,8 @@
 
 ## 1. 성균관대학교 로그인 모듈 소개
 **skku-login-module**은 성균관대학교 로그인 확인용 모듈 패키지 입니다. 학번과 비밀번호 (Kingo아이디 비밀번호)를 입력하면 해당 학생에 대한 정보를 반환 합니다. 이를 통해 회원에 대한 정보를 DB에 저장하지 않고도, 로그인 기능을 구현할 수 있습니다. 
+해당 모듈은 login_confirm이라는 function을 가지고 있으며, skku-login-module(ID,PASSWD, callback)을 통해 사용할 수 있습니다.
+callback함수는 인자 하나를 입력받습니다. 해당 인자는 배열이며, 로그인이 안된다면 빈 배열이, 로그인이 성공한다면 학과, 이름 등의 정보 4개가 포함된 배열이 인자로 입력됩니다.
 
 ## 2. 로그인 모듈의 필요성
 예를 들어 학과 내에서 스터디룸 예약 시스템을 개발하는 경우, 회원가입을 구현할 때, 가장 큰 문제는 다음과 같습니다.
@@ -24,10 +26,27 @@
 ```
 npm init
 ```
+### 2. npm install을 통해 skku-login-module을 다운 받는다.
 
 ```
-npm init
+npm install skku-login-module
 ```
+
+### 3. 원하는 js파일에서 해당 모듈을 포함시킨다.
+
+```javascript
+const loginmodule = require('skku-login-module')
+
+```
+### 4. 함수를 실행하고, callback function을 통해 결과를 확인한다.
+
+```javascript
+loginmodule.loginconfirm(StudentID, Passwd, (result)=>{
+    console.log(result)
+})
+```
+
+result에는 로그인이 성공하면 정보 4개가 든 배열이, 실패하면 빈 배열이 반환됩니다.
 	
 
 ****
