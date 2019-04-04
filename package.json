@@ -1,0 +1,30 @@
+{
+  "name": "skku-login-module",
+  "version": "1.0.0-beta.1",
+  "description": "login module for SungKyunKwan University",
+  "main": "./login-module/skku-login-module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingofHamyang/skku-login-module.git"
+  },
+  "author": {
+    "name": "HaSeongjun",
+    "email": "seongjun6608@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingofHamyang/skku-login-module/issues"
+  },
+  "homepage": "https://github.com/KingofHamyang/skku-login-module#readme",
+  "keywords": [
+    "skku",
+    "login"
+  ],
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0"
+  }
+}
